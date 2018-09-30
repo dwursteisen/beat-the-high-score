@@ -1,0 +1,15 @@
+
+sourceControl {
+    gitRepository("https://github.com/dwursteisen/libgdx-addons.git") {
+        producesModule("com.github.dwursteisen.libgdx-addons:aseprite-plugin")
+        producesModule("com.github.dwursteisen.libgdx-addons:aseprite-addons")
+        producesModule("com.github.dwursteisen.libgdx-addons:ashley-addons")
+        producesModule("com.github.dwursteisen.libgdx-addons:core-addons")
+    }
+}
+
+include 'desktop', 'core'
+
+if(hasProperty("ANDROID")) {
+    include 'android'
+}

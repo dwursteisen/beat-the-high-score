@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="left-down" width="16" height="28" tilewidth="8" tileheight="8" infinite="0" nextobjectid="133">
+ <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="sheets/tileset.png" width="128" height="128"/>
+ </tileset>
+ <layer name="background" width="16" height="28">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+4,0,6,0,6,0,6,0,6,6,6,0,6,0,5,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,0,1,0,1,0,1,0,1,0,1,0,1,0,13,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+20,0,9,0,9,0,9,0,9,0,9,0,9,0,21,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+28,0,17,0,17,0,17,0,17,0,17,0,17,0,29,0
+</data>
+ </layer>
+ <layer name="shadow" width="16" height="28">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,11,0,11,0,11,0,11,0,11,0,0,0,0,0,
+44,0,11,0,11,0,11,0,11,0,11,0,11,0,45,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="deco" width="16" height="28">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+36,0,10,0,10,0,10,0,10,0,10,0,10,0,37,0,
+0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,
+0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="front_deco" width="16" height="28" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+10,0,10,0,0,0,0,0,0,0,0,0,10,0,10,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="deadZone">
+  <object id="103" x="0" y="192" width="128" height="32"/>
+ </objectgroup>
+ <objectgroup name="bricks">
+  <object id="85" x="0" y="64" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="92" x="0" y="56" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="99" x="-8" y="0" width="144" height="32">
+   <properties>
+    <property name="hit" type="int" value="-1"/>
+   </properties>
+  </object>
+  <object id="105" x="0" y="72" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="109" x="112" y="64" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="110" x="112" y="56" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="111" x="112" y="72" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="112" x="16" y="64" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="113" x="16" y="56" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="114" x="16" y="72" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="115" x="96" y="64" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="116" x="96" y="56" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="117" x="96" y="72" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="121" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="122" x="32" y="56" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="123" x="32" y="72" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="124" x="48" y="64" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="125" x="48" y="56" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="126" x="48" y="72" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="127" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="128" x="64" y="56" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="129" x="64" y="72" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="130" x="80" y="64" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="131" x="80" y="56" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="132" x="80" y="72" width="16" height="16">
+   <properties>
+    <property name="hit" type="int" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,40 @@
+{
+  "frames": {
+    "egg.aseprite": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 9
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 9
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 9
+      },
+      "duration": 100
+    }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.9",
+  "image": "/Users/david/workspace/libgdx/beat/core/assets/sheets/egg.png",
+  "format": "RGBA8888",
+   "size": {
+     "w": 16,
+     "h": 16
+   },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "slices": [
+  ]
+ }
+}

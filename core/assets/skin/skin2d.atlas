@@ -1,0 +1,81 @@
+
+skin2d.png
+size: 256,32
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+button_down
+  rotate: false
+  xy: 30, 9
+  size: 26, 17
+  split: 12, 9, 3, 3
+  pad: 12, 9, 3, 3
+  orig: 26, 17
+  offset: 0, 0
+  index: -1
+button_up
+  rotate: false
+  xy: 2, 9
+  size: 26, 17
+  split: 12, 9, 3, 3
+  pad: 12, 9, 3, 3
+  orig: 26, 17
+  offset: 0, 0
+  index: -1
+radio_off
+  rotate: false
+  xy: 150, 10
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+radio_on
+  rotate: false
+  xy: 132, 10
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+radio_over
+  rotate: false
+  xy: 114, 10
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+scroll
+  rotate: false
+  xy: 168, 8
+  size: 5, 18
+  split: 0, 5, 4, 5
+  pad: 0, 0, 4, 5
+  orig: 5, 18
+  offset: 0, 0
+  index: -1
+scroll_x
+  rotate: false
+  xy: 2, 2
+  size: 18, 5
+  split: 4, 4, 0, 5
+  pad: 4, 4, 0, 0
+  orig: 18, 5
+  offset: 0, 0
+  index: -1
+select
+  rotate: false
+  xy: 86, 9
+  size: 26, 17
+  split: 3, 3, 3, 3
+  pad: 3, 3, 3, 3
+  orig: 26, 17
+  offset: 0, 0
+  index: -1
+select_background
+  rotate: false
+  xy: 58, 9
+  size: 26, 17
+  split: 11, 9, 3, 3
+  pad: 11, 9, 3, 3
+  orig: 26, 17
+  offset: 0, 0
+  index: -1

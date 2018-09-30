@@ -1,0 +1,151 @@
+{
+  "frames": {
+    "renard 0.aseprite": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "renard 1.aseprite": {
+      "frame": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "renard 2.aseprite": {
+      "frame": {
+        "x": 0,
+        "y": 32,
+        "w": 64,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "renard 3.aseprite": {
+      "frame": {
+        "x": 64,
+        "y": 32,
+        "w": 64,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "renard 4.aseprite": {
+      "frame": {
+        "x": 0,
+        "y": 64,
+        "w": 64,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "renard 5.aseprite": {
+      "frame": {
+        "x": 64,
+        "y": 64,
+        "w": 64,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 32
+      },
+      "duration": 100
+    }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.9",
+  "image": "/Users/david/workspace/libgdx/beat/core/assets/sheets/renard.png",
+  "format": "RGBA8888",
+   "size": {
+     "w": 128,
+     "h": 128
+   },
+  "scale": "1",
+  "frameTags": [
+    {
+      "name": "idle",
+      "from": 0,
+      "to": 5,
+      "direction": "forward"
+    }
+  ],
+  "slices": [
+  ]
+ }
+}

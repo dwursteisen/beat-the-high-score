@@ -1,0 +1,159 @@
+{
+  BitmapFont: {
+    button: {
+      file: krungthep2.fnt
+      scaledSize: 6
+    }
+
+    button-reduit: {
+      file: krungthep2.fnt
+      scaledSize: 5
+    }
+  }
+  Color: {
+    black: {
+      r: 0.1328125
+      g: 0.125
+      b: 0.203125
+      a: 1
+    }
+
+    white: {
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    }
+  }
+
+  TintedDrawable: {
+    button-c: {
+      name: button_up
+      color: white
+    }
+    button-p: {
+      name: button_down
+      color: white
+    }
+    button-h: {
+      name: button_down
+      color: white
+    }
+    checkbox-h: {
+      name: radio_over
+      color: white
+    }
+    checkbox-pressed-h: {
+      name: radio_over
+      color: white
+    }
+    checkbox-p: {
+      name: radio_off
+      color: white
+    }
+    checkbox-pressed-p: {
+      name: radio_on
+      color: white
+    }
+    scrollbar-c: {
+      name: scroll
+      color: white
+    }
+    scrollbar-x: {
+      name: scroll_x
+      color: white
+    }
+    select-c: {
+      name: select
+      color: white
+    }
+    select-b: {
+      name: select_background
+      color: white
+    }
+  }
+
+  LabelStyle: {
+    default: {
+      font: button
+      fontColor: white
+    }
+
+    option: {
+      font: button-reduit
+      fontColor: white
+    }
+  }
+
+  CheckBoxStyle: {
+    default: {
+      checkboxOn: checkbox-pressed-p
+      checkboxOff: checkbox-p
+      font: button
+      fontColor: white
+      downFontColor: white
+      overFontColor: white
+    }
+
+    option: {
+      checkboxOn: checkbox-pressed-p
+      checkboxOff: checkbox-p
+      font: button-reduit
+      fontColor: white
+      downFontColor: white
+      overFontColor: white
+    }
+  }
+
+
+  ListStyle: {
+    default: {
+      font: button-reduit
+      fontColorSelected: white
+      fontColorUnselected: white
+      selection: select
+      background: select-b
+    }
+  }
+
+  ScrollPaneStyle: {
+    default: {
+      hScrollKnob: scrollbar-x
+      vScrollKnob: scrollbar-c
+    }
+  }
+
+  SelectBoxStyle: {
+    default: {
+      font: button
+      fontColor: white
+      background: button-c
+      scrollStyle: default
+      listStyle: default
+      backgroundOver: button-c
+      backgroundOpen: button-h
+    }
+
+    option: {
+      font: button-reduit
+      fontColor: white
+      background: button-c
+      scrollStyle: default
+      listStyle: default
+      backgroundOver: button-c
+      backgroundOpen: button-h
+    }
+  }
+
+  TextButtonStyle: {
+    default: {
+      font: button
+      fontColor: black
+      downFontColor: white
+      overFontColor: white
+      up: button-c
+      down: button-p
+      over: button-h
+    }
+  }
+}

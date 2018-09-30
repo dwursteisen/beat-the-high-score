@@ -1,0 +1,136 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+apply plugin: "kotlin"
+apply plugin: "com.github.dwursteisen.libgdx.aseprite.AsepritePlugin"
+
+
+sourceCompatibility = 1.6
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+project.ext.mainClassName = "com.github.dwursteisen.beat.desktop.DesktopLauncher"
+project.ext.assetsDir = new File("../core/assets");
+
+task aseprite(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
+    json = true
+    verbose = true
+    outputDirectory = project.file("../core/assets/sheets")
+    inputFiles = fileTree("../aseprite/").include("**/*.aseprite")
+}
+
+task aseprite_skin(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
+    json = true
+    verbose = true
+    outputDirectory = project.file("../build/skin2d/")
+    inputFiles = fileTree("../skin2d/").include("**/*.aseprite")
+}
+
+
+
+task logo_mdpi(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
+    json = false
+    verbose = true
+    outputDirectory = project.file("../android/src/main/res/drawable-mdpi")
+    inputFiles = fileTree("../android_res/").include("ic_launcher.aseprite")
+    scale = 1.5
+}
+
+
+task logo_tvdpi(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
+    json = false
+    verbose = true
+    outputDirectory = project.file("../android/src/main/res/drawable-tvdpi")
+    inputFiles = fileTree("../android_res/").include("ic_launcher.aseprite")
+    scale = 2
+}
+
+
+task logo_hdpi(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
+    json = false
+    verbose = true
+    outputDirectory = project.file("../android/src/main/res/drawable-hdpi")
+    inputFiles = fileTree("../android_res/").include("ic_launcher.aseprite")
+    scale = 2.25
+}
+
+task logo_xhdpi(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
+    json = false
+    verbose = true
+    outputDirectory = project.file("../android/src/main/res/drawable-xhdpi")
+    inputFiles = fileTree("../android_res/").include("ic_launcher.aseprite")
+    scale = 3
+}
+
+
+task logo_xxhdpi(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
+    json = false
+    verbose = true
+    outputDirectory = project.file("../android/src/main/res/drawable-xxhdpi")
+    inputFiles = fileTree("../android_res/").include("ic_launcher.aseprite")
+    scale = 4.5
+}
+
+
+task logo_xxxhdpi(type: com.github.dwursteisen.libgdx.aseprite.AsepriteTask, group: "aseprite") {
+    json = false
+    verbose = true
+    outputDirectory = project.file("../android/src/main/res/drawable-xxxhdpi")
+    inputFiles = fileTree("../android_res/").include("ic_launcher.aseprite")
+    scale = 6
+}
+
+
+task logo(dependsOn: ["logo_mdpi", "logo_tvdpi", "logo_hdpi", "logo_xhdpi", "logo_xxhdpi", "logo_xxxhdpi"]) {
+    group = "aseprite"
+}
+
+
+task run(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+    
+    if(Os.isFamily(Os.FAMILY_MAC))
+        jvmArgs += "-XstartOnFirstThread"
+}
+
+task debug(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+    debug = true
+}
+
+task dist(type: Jar) {
+    from files(sourceSets.main.output.classesDir)
+    from files(sourceSets.main.output.resourcesDir)
+    from {configurations.compile.collect {zipTree(it)}}
+    from files(project.assetsDir);
+ 
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+}
+
+dist.dependsOn classes
+
+eclipse {
+    project {
+        name = appName + "-desktop"
+        linkedResource name: 'assets', type: '2', location: 'PARENT-1-PROJECT_LOC/core/assets'
+    }
+}
+
+task afterEclipseImport(description: "Post processing after project generation", group: "IDE") {
+  doLast {
+    def classpath = new XmlParser().parse(file(".classpath"))
+    new Node(classpath, "classpathentry", [ kind: 'src', path: 'assets' ]);
+    def writer = new FileWriter(file(".classpath"))
+    def printer = new XmlNodePrinter(new PrintWriter(writer))
+    printer.setPreserveWhitespace(true)
+    printer.print(classpath)
+  }
+}

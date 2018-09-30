@@ -1,0 +1,382 @@
+{
+  "frames": {
+    "chicken 0.aseprite": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 500
+    },
+    "chicken 1.aseprite": {
+      "frame": {
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 2.aseprite": {
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 3.aseprite": {
+      "frame": {
+        "x": 144,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 4.aseprite": {
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 5.aseprite": {
+      "frame": {
+        "x": 0,
+        "y": 32,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 200
+    },
+    "chicken 6.aseprite": {
+      "frame": {
+        "x": 48,
+        "y": 32,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 7.aseprite": {
+      "frame": {
+        "x": 96,
+        "y": 32,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 8.aseprite": {
+      "frame": {
+        "x": 144,
+        "y": 32,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 9.aseprite": {
+      "frame": {
+        "x": 192,
+        "y": 32,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 10.aseprite": {
+      "frame": {
+        "x": 0,
+        "y": 64,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 11.aseprite": {
+      "frame": {
+        "x": 48,
+        "y": 64,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "chicken 12.aseprite": {
+      "frame": {
+        "x": 96,
+        "y": 64,
+        "w": 48,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 32
+      },
+      "duration": 100
+    }
+  },
+  "meta": {
+    "app": "http://www.aseprite.org/",
+    "version": "1.2.9",
+    "image": "/Users/david/workspace/libgdx/beat/core/assets/sheets/chicken.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 256,
+      "h": 128
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "idle",
+        "from": 0,
+        "to": 0,
+        "direction": "forward"
+      },
+      {
+        "name": "idle2",
+        "from": 1,
+        "to": 4,
+        "direction": "forward"
+      },
+      {
+        "name": "idle3",
+        "from": 5,
+        "to": 8,
+        "direction": "forward"
+      },
+      {
+        "name": "touch",
+        "from": 9,
+        "to": 9,
+        "direction": "forward"
+      },
+      {
+        "name": "bounce",
+        "from": 10,
+        "to": 12,
+        "direction": "forward"
+      }
+    ],
+    "slices": [
+      {
+        "name": "hitbox",
+        "color": "#0000ffff",
+        "keys": [
+          {
+            "frame": 0,
+            "bounds": {
+              "x": 5,
+              "y": 5,
+              "w": 39,
+              "h": 12
+            }
+          },
+          {
+            "frame": 1,
+            "bounds": {
+              "x": 5,
+              "y": 5,
+              "w": 39,
+              "h": 4
+            }
+          },
+          {
+            "frame": 2,
+            "bounds": {
+              "x": 5,
+              "y": 5,
+              "w": 39,
+              "h": 9
+            }
+          },
+          {
+            "frame": 3,
+            "bounds": {
+              "x": 5,
+              "y": 5,
+              "w": 39,
+              "h": 21
+            }
+          },
+          {
+            "frame": 4,
+            "bounds": {
+              "x": 5,
+              "y": 5,
+              "w": 39,
+              "h": 3
+            }
+          },
+          {
+            "frame": 8,
+            "bounds": {
+              "x": 5,
+              "y": 5,
+              "w": 39,
+              "h": 9
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

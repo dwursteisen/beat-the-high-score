@@ -1,0 +1,109 @@
+buildscript {
+    ext.kotlinVersion = '1.2.70'
+    ext.libgdx_addons = 'v1.0'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        //classpath "com.github.dwursteisen:libgdx-addons:$libgdx_addons"
+        classpath "com.github.dwursteisen.libgdx-addons:aseprite-plugin:$libgdx_addons"
+        classpath 'com.android.tools.build:gradle:3.1.4'
+
+    }
+}
+
+allprojects {
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+
+    version = '1.0'
+    ext {
+        appName = "beat_the_high_score"
+        gdxVersion = '1.9.9-SNAPSHOT'
+        roboVMVersion = '2.3.3'
+        box2DLightsVersion = '1.4'
+        ashleyVersion = '1.7.3'
+        aiVersion = '1.8.1'
+        ktxVersion = '1.9.8-b3'
+        gdx_recorder = 'fa56b71fe5'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    }
+}
+
+project(":desktop") {
+    apply plugin: "kotlin"
+
+    dependencies {
+        compile project(":core")
+        compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+        compile "com.github.Anuken:GdxGifRecorder:$gdx_recorder"
+    }
+}
+
+
+
+if (hasProperty("ANDROID")) {
+
+    project(":android") {
+        apply plugin: "android"
+        apply plugin: 'kotlin-android'
+
+        configurations { natives }
+
+        dependencies {
+            implementation project(":core")
+            implementation "com.badlogicgames.gdx:gdx-backend-android:$gdxVersion"
+            natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi"
+            natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a"
+            natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86"
+            implementation "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+            natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-armeabi"
+            natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-armeabi-v7a"
+            natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86"
+        }
+    }
+}
+
+
+project(":core") {
+    apply plugin: "kotlin"
+
+    dependencies {
+        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+        compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        compile "com.badlogicgames.ashley:ashley:$ashleyVersion"
+        compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+        compile "io.github.libktx:ktx-ashley:$ktxVersion"
+        compile "io.github.libktx:ktx-graphics:$ktxVersion"
+        compile "io.github.libktx:ktx-scene2d:$ktxVersion"
+        compile "io.github.libktx:ktx-log:$ktxVersion"
+        compile "org.apache.commons:commons-text:1.1"
+        compile "com.github.dwursteisen.libgdx-addons:aseprite-addons:$libgdx_addons"
+        compile "com.github.dwursteisen.libgdx-addons:ashley-addons:$libgdx_addons"
+        compile "com.github.dwursteisen.libgdx-addons:core-addons:$libgdx_addons"
+    }
+}
+
+tasks.eclipse.doLast {
+    delete ".project"
+}
